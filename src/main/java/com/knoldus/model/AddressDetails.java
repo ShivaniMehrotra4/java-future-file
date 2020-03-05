@@ -2,19 +2,19 @@ package com.knoldus.model;
 
 import java.util.Optional;
 
-public class Address {
+public class AddressDetails {
 
     private String primaryAddress;
     private Optional<String> secondaryAddress;
 
-    public Address(String primaryAddress, Optional<String> secondaryAddress) {
+    public AddressDetails(String primaryAddress, Optional<String> secondaryAddress) {
         this.primaryAddress = primaryAddress;
         this.secondaryAddress = secondaryAddress;
     }
 
-    public Address(String primaryAddress) {
+    public AddressDetails(String primaryAddress) {
         this.primaryAddress = primaryAddress;
-        this.secondaryAddress = Optional.ofNullable(null);
+        this.secondaryAddress = Optional.empty();
     }
 
     @Override

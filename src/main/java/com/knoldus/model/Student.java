@@ -4,12 +4,12 @@ public class Student {
     int id;
     String name;
     int age;
-    Address address;
+    AddressDetails address;
 
     public Student() {
     }
 
-    public Student(int id, String name, int age, Address address) {
+    public Student(int id, String name, int age, AddressDetails address) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -29,7 +29,7 @@ public class Student {
         return age;
     }
 
-    public Address getAddress() {
+    public AddressDetails getAddress() {
         return address;
     }
 

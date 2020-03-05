@@ -48,9 +48,8 @@ public class Services {
     }
 
     public static String getTimeFromGivenTimeZone(ZonedDateTime zoneId) {
-        String timeFromTimeZone = zoneId.format(DateTimeFormatter.ISO_LOCAL_TIME) + " - " + zoneId + ",UTC"
+        return zoneId.format(DateTimeFormatter.ISO_LOCAL_TIME) + " - " + zoneId + ",UTC"
                 + zoneId.getOffset().toString();
-        return timeFromTimeZone;
     }
 
 }

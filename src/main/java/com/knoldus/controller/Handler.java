@@ -1,6 +1,6 @@
 package com.knoldus.controller;
 
-import com.knoldus.model.Address;
+import com.knoldus.model.AddressDetails;
 import com.knoldus.model.Student;
 
 import java.time.*;
@@ -12,9 +12,9 @@ public class Handler {
 
     public static void main(String[] args) {
 
-        Student studentOne = new Student(1, "Shivani", 24, new Address("Sahibabad"));
-        Student studentThree = new Student(2, "Muskan", 21, new Address("Faridabad", java.util.Optional.of("VijayNagar")));
-        Student studentFour = new Student(3, "Aakash", 23, new Address("Delhi"));
+        Student studentOne = new Student(1, "Shivani", 24, new AddressDetails("Sahibabad"));
+        Student studentThree = new Student(2, "Muskan", 21, new AddressDetails("Faridabad", java.util.Optional.of("VijayNagar")));
+        Student studentFour = new Student(3, "Aakash", 23, new AddressDetails("Delhi"));
 
         List<Student> listOfStudents = Arrays.asList(studentOne, studentThree, studentFour);
 
