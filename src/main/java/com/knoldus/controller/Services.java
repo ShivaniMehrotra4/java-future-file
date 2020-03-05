@@ -2,10 +2,10 @@ package com.knoldus.controller;
 
 import com.knoldus.model.Student;
 
-import java.time.Duration;
 import java.time.LocalDate;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -44,7 +44,11 @@ public class Services {
     }
 
     public static long getTimeBetweenBirthAndDeath(LocalDate birthDate, LocalDate deathDate) {
-        return Duration.between(birthDate.atStartOfDay(), deathDate.atStartOfDay()).toSeconds();
+         //Period gap = Period.between(birthDate, deathDate);
+         long noOfDays = ChronoUnit.DAYS.between(birthDate,deathDate);
+         return noOfDays*24*3600;
+
+        //return Duration.between(birthDate.atStartOfDay(), deathDate.atStartOfDay()).toSeconds();
     }
 
     public static String getTimeFromGivenTimeZone(ZonedDateTime zoneId) {
