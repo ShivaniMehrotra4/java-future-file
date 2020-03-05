@@ -1,7 +1,7 @@
-package controller;
+package com.knoldus.controller;
 
-import model.Address;
-import model.Student;
+import com.knoldus.model.Address;
+import com.knoldus.model.Student;
 
 import java.time.*;
 import java.util.Arrays;

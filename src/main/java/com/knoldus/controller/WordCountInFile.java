@@ -1,4 +1,4 @@
-package controller;
+package com.knoldus.controller;
 
 import java.io.IOException;
 import java.nio.file.Files;

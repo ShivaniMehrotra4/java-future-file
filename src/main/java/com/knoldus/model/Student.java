@@ -1,4 +1,4 @@
-package model;
+package com.knoldus.model;
 
 public class Student {
     int id;
@@ -35,6 +35,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return String.format("Id : %d Name : %s Age : %d model.Address : %s", getId(), getName(), getAge(), getAddress());
+        return String.format("Id : %d Name : %s Age : %d com.knoldus.model.Address : %s", getId(), getName(), getAge(), getAddress());
     }
 }

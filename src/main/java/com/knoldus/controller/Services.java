@@ -1,6 +1,6 @@
-package controller;
+package com.knoldus.controller;
 
-import model.Student;
+import com.knoldus.model.Student;
 
 import java.time.Duration;
 import java.time.LocalDate;

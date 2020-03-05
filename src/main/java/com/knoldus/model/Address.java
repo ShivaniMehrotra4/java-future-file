@@ -1,4 +1,4 @@
-package model;
+package com.knoldus.model;
 
 import java.util.Optional;
 
@@ -19,7 +19,7 @@ public class Address {
 
     @Override
     public String toString() {
-        return String.format("Primary model.Address : %s Secondary model.Address : %s ", getPrimaryAddress(), getSecondaryAddress());
+        return String.format("Primary com.knoldus.model.Address : %s Secondary com.knoldus.model.Address : %s ", getPrimaryAddress(), getSecondaryAddress());
     }
 
     public String getPrimaryAddress() {
