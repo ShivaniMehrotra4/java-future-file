@@ -1,45 +1,51 @@
-Assignments Java8
+Day2.
 
-Day1.
+Assignment 1. Create a class Student:id(int), name(String), age(int), address(Address)
 
-Assignment 1. Create a Functional Interface with a single abstract method that takes 5 input parameters and returns the result.
+Address Object
+Primary Address - String
+Secondary Address - Optional<String>
 
-Input parameter - Can be an Integer or a String.
-Output datatype - Can be an Integer or a String.
-Note: You can perform any operation.
+A student can or cannot have a secondary address.
+1. Find the list of students associated who do not have a secondary address.
+2. Find the list of student name where the name starts with the initial of your name and do not have a secondary address.
 
-Assignment 2. There is a list of cities and you have to find the cities which starts with “C”, once you have the list, please make sure it is sorted(Ascending order).
+ Assignment 2.  List all your birth date’s DayOfWeek till date.
 
-Note - Please make sure you ignore the cases and stick to the order of the operations.
+example - If you were born on 10th May, 1991, then return a List<String> which will have DayOfWeek from the day you were born till date.
 
-Assignment 3. Given two lists of integers, list1 and list 2. Create a list of multiplication of the corresponding elements.
+10th May, 1991  - Friday
+10th May,1992 - Sunday
+And so on
 
+Output - List[“Friday”,”Sunday”...]
 
-Assignment 4. There is a class User with the following fields.
+Assignment 3. Print current time of the given Time Zone.
 
+Example - String getTimeFromTimeZone(String timeZone);
 
-Id
-Name
-Address (city name)
-Age
+Output - Time as per given timeZone (TimeZone values -  UTC, UTC+12)
 
+Assignment 4. Print the number of seconds a man lived(ignore time, consider only date).
 
-Create a sample list of users and perform the below mentioned operations.
-Keep in mind:
-List out all the users with age above 18 and address Delhi.
-List out all the users with id greater than 10 and age less than 20.
-List out all the users with age as even number.
-List out all the users with age equals to 18 and address Delhi.
+Create a function which takes two parameters
+1. Man’s birth date.
+2. Man's death date.
 
+Assignment 5. List all the leap years after 1st Republic Day(India).
 
+Assignment 6. You have to read the contents of a file and return a Map<String, String> with key as the common word and values as the count.
 
-User Model - 
+Example -
+ Input - A file path
+Output - {“hello”:”2”, “world”:2}
 
-Class User {
-Integer id;
-String name;
-String age;
-String address;
-} 
+Assignment 7 - 
+Write an application to perform CRUD operation for a user
 
+To do this -
+You can use a list to hold/delete the objects.
+The methods should return Completeable future.
+Use exception handling wherever required.
+Use Maven build tool
 
