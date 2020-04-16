@@ -9,7 +9,7 @@ pipeline {
                     	label 'ubuntu'
                     }
                     steps {
-                    	mvn clean
+                    	echo "hello"
                     }
                 }
                 stage('Build on slave 2') {
@@ -17,7 +17,7 @@ pipeline {
                         label 'ubuntu'
                     }
                     steps {
-                        mvn clean
+                        echo "hello"
                     }
                 }
             }
