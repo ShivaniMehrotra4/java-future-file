@@ -1,15 +1,15 @@
 pipeline {
-    agent none
+    agent any
 
     stages {
         stage('Parallel steps') {
             parallel {
                 stage('Build on slave 1') {
                     agent { 
-                        label 'ubuntu'
+                    	label 'ubuntu'
                     }
                     steps {
-                        mvn clean compile
+                    	mvn clean
                     }
                 }
                 stage('Build on slave 2') {
@@ -17,7 +17,7 @@ pipeline {
                         label 'ubuntu'
                     }
                     steps {
-                        mvn clean compile
+                        mvn clean
                     }
                 }
             }
